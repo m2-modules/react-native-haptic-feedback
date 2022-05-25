@@ -1,20 +1,20 @@
-import * as React from 'react';
-
-import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from '@m2-modules/react-native-haptic-feedback';
+import {
+  impactFeedback,
+  ImpactFeedbackStyle,
+} from '@m2-modules/react-native-haptic-feedback'
+import * as React from 'react'
+import { StyleSheet, View } from 'react-native'
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
-
-  React.useEffect(() => {
-    multiply(3, 7).then(setResult);
-  }, []);
-
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <button
+        onClick={() => {
+          impactFeedback(ImpactFeedbackStyle.Light)
+        }}
+      />
     </View>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
@@ -28,4 +28,4 @@ const styles = StyleSheet.create({
     height: 60,
     marginVertical: 20,
   },
-});
+})
