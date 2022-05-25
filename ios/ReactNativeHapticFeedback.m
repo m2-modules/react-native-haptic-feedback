@@ -2,8 +2,8 @@
 
 @interface RCT_EXTERN_MODULE(ReactNativeHapticFeedback, NSObject)
 
-RCT_EXTERN_METHOD(multiply:(float)a withB:(float)b
-                 withResolver:(RCTPromiseResolveBlock)resolve
-                 withRejecter:(RCTPromiseRejectBlock)reject)
+RCT_EXTERN_METHOD(impactFeedback: (nonnull NSNumber *) type);
+RCT_EXTERN_METHOD(selectionFeedback);
+RCT_EXTERN_METHOD(notificationFeedback: (nonnull NSNumber *) type);
 
 @end
