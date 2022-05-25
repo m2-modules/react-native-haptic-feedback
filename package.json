@@ -1,6 +1,6 @@
 {
   "name": "@m2-modules/react-native-haptic-feedback",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "React native haptic feedback module",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -27,6 +27,7 @@
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
     "prepare": "bob build",
     "release": "release-it",
+    "prerelease:beta": "release-it --preRelease=beta",
     "example": "yarn --cwd example",
     "pods": "cd example && pod-install --quiet",
     "bootstrap": "yarn example && yarn && yarn pods"
