@@ -1,7 +1,7 @@
 {
   "name": "@m2-modules/react-native-haptic-feedback",
   "version": "0.1.0",
-  "description": "React natiev hatpic feedback module",
+  "description": "React native haptic feedback module",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
   "types": "lib/typescript/index.d.ts",
@@ -37,7 +37,7 @@
     "android"
   ],
   "repository": "https://github.com/m2-modules/react-native-haptic-feedback",
-  "author": "Jay Lee <jaylee.possible@gmail.com> (https://github.com/possible819)",
+  "author": "Jay Lee <jaylee.possible@gmail.com> (https://github.com/m2-modules)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/m2-modules/react-native-haptic-feedback/issues"
